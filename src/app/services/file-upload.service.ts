@@ -25,35 +25,7 @@ export class FileUploadService {
 
     console.log("file-upload Service"+image);
 
-    // let httpOptions = {
-    //   headers: new HttpHeaders({
-    //     'Accept': 'text/html, application/xhtml+xml, */*',
-    //     'Content-Type': 'application/x-www-form-urlencoded'
-    //   }),
-    //   responseType: 'text'
-    // };
 
     return this.http.post<any>(this.baseUrl + '/upload', formData);
   }
-  // const formData = new FormData();
-  // for (const file of this.files) {
-  // formData.append(name, file, file.name);
-
-
 }
-
-
-// return this.http.post<string>(this.baseUrl + '/upload', formData, {
-//   headers: new HttpHeaders({
-//     'Accept': 'application/json',
-//     'Content-Type': 'application/json'
-//   })
-// });
-
-// {
-//   headers: new HttpHeaders({
-//     'Accept': 'text/html, application/xhtml+xml, */*',
-//     'Content-Type': 'application/x-www-form-urlencoded'
-//   }),
-//   responseType: 'text'
-// }

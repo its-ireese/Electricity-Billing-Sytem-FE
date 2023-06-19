@@ -8,22 +8,16 @@ import { AdminComponent } from './users/admin/admin.component';
 import { RegisterComponent } from './users/register/register.component';
 import { LoginComponent } from './users/login/login.component';
 import { HeaderComponent } from './header/header.component';
-import { CheckoutComponent } from './shop/checkout/checkout.component';
-import { StoreProductComponent } from './shop/store-product/store-product.component';
 import { ProfileComponent } from './users/profile/profile.component';
-import { ProductPageComponent } from './shop/product-page/product-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CheckoutComponent,
     HeaderComponent,
     AdminComponent,
     LoginComponent,
     RegisterComponent,
-    StoreProductComponent,
     ProfileComponent,
-    ProductPageComponent,
   ],
   imports: [
     BrowserModule,
